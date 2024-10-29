@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PeopleController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -23,3 +24,7 @@ Route::get('/somar', function(Request $request) {
         'sum' => $soma
     ]);
 });
+
+    Route::get('people/list', [PeopleController::class, 'list']);
+
+    Route::post('people/store', [PeopleController::class, 'store']);
