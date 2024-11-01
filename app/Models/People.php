@@ -18,5 +18,9 @@ class People extends Model
         'phone',
         'birthDate',
     ];
+
+    public function interests() {
+        return $this->hasMany(Interests::class);
+    }
 }
 

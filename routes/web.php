@@ -28,3 +28,5 @@ Route::get('/somar', function(Request $request) {
     Route::get('people/list', [PeopleController::class, 'list']);
 
     Route::post('people/store', [PeopleController::class, 'store']);
+
+    Route::post('people/storeInterest', [PeopleController::class, 'storeInterest']);
